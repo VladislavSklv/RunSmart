@@ -1,5 +1,5 @@
-@import url('base/_variables.scss');
-@import url('base/_mixins.scss');
+@import 'base/_variables';
+@import 'base/_mixins';
 * {
     font-family: 'Museo Sans', sans-serif;
     box-sizing: border-box;
@@ -12,5 +12,6 @@
     max-width: 950px;
     margin: 0 auto;
 }
-@import url('blocks/_promo.scss');
-@import url('blocks/_header.scss');
+@import 'blocks/_promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
