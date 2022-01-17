@@ -33,7 +33,6 @@
         width: 108px;
         text-align: center;
         color: #ffffff;
-        font-family: "Museo Sans";
         font-size: 14px;
         font-weight: 500;
         img{
@@ -53,6 +52,14 @@
             color: #ffffff;
             text-transform: uppercase;
             text-decoration: underline;
+        }
+    }
+}
+
+@media(max-width: 1024px){
+    .promo{
+        &__wrapper{
+            align-items: center;
         }
     }
 }
