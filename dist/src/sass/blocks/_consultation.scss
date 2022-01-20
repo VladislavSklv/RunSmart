@@ -1,0 +1,48 @@
+.consultation{
+    min-height: 680px;
+    padding: 100px 0 92px 0;
+    background: url('../img/bg2.jpg') center (center/cover) no-repeat;
+    &__descr{
+        color:#fff ;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 80px;
+    }
+}
+
+@media(max-width:1024px){
+    .consultation{
+        text-align: center;
+        .section-header_left{
+            text-align: center;
+        }
+        .feed-form{
+            margin: 36px auto 0 auto;
+        }
+    }
+}
+
+@media(max-width:768px){
+    .consultation{
+        min-height: 600px;
+        padding: 50px 0 45px 0;
+        &__descr{
+            font-size: 18px;
+        }
+    }
+}
+
+@media(max-width:575px){
+    .consultation{
+        &__descr{
+            font-size: 13px;
+            margin-top: 55px;
+        }
+        .feed-form{
+            width: 280px;
+        }
+        .button{
+            font-size: 14px;
+        }
+    }
+}
