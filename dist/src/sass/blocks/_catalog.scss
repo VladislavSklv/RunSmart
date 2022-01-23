@@ -40,13 +40,25 @@
         }
     }
     &__content{
+        display: none;
         margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* &:nth-child(n + 4){
+            margin-bottom: 0;
+        } */
+        &_active {
+            display: flex;
+        }
     }
     &-item{
         width: 300px;
         min-height: 440px;
         border: 2px solid #e8e8e8;
         padding: 20px 20px 26px 20px;
+        overflow: hidden;
+        margin-bottom: 20px;
         &__img{
             display: block;
             height: 200px;
@@ -74,6 +86,7 @@
             font-weight: 500;
             text-align: center;
             margin-top: 17px;
+            text-transform: uppercase;
             &:hover{
                 color: $main-color;
             }
@@ -100,6 +113,73 @@
             color: #050505;
             font-size: 20px;
             font-weight: 700;
+        }
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__content {
+            position: relative;
+            width: 50%;
+            margin-right: 0px;
+            transform: translateX(-100%);
+            transition: 0.3s all;
+/*             padding-right: 20px; */
+            &_active{
+                transform: translateX(0%);
+                margin-right: 20px;
+               /*  padding-right: 0; */
+            }
+        }
+        &__list{
+            position: relative;
+            width: 50%;
+            margin-left: 20px;
+            transform: translateX(0%);
+            padding-right: 20px;
+            padding-left: 19px;
+            transition: 0.3s all;
+            list-style-type: none;
+            &_active{
+                transform: translateX(-100%);
+                margin-left: 0px;
+            }
+            li {
+                position: relative;
+                color: #555555;
+                font-size: 14px;
+                line-height: 19px;
+                font-weight: 300;
+                margin-bottom: 20px;
+                &:nth-child(4){
+                    margin-bottom: 0;
+                }
+                &::before{
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    background-color: $main-color;
+                    position: absolute;
+                    left: -14px;
+                    top: 6px;
+                }
+            }
+            a {
+                display: block;
+                position: absolute;
+                color: $main-color;
+                font-size: 14px;
+                font-weight: 500;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(calc(-50% - 19px));
+                text-align: center;
+                text-decoration: underline;
+                text-transform: uppercase;
+                &:hover{
+                    color: $main-color;
+                }
+            }
         }
     }
 }
