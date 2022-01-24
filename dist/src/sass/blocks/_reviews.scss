@@ -1,0 +1,112 @@
+.reviews{
+    padding-bottom: 71px;
+    &-item{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        &:nth-child(2){
+            margin-top: 70px;
+        }
+        &:nth-child(4){
+            margin-bottom: 0;
+        }
+        &__icon{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+        img{
+            width: 169px;
+            height: 169px;
+            margin-top: 14px;
+        }
+        &__text{
+            width: 650px;
+            margin-right: 73px;
+            color: #0d0d0d;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        .double-height{
+            display: block;
+            content: '';
+            height: 20px;
+        }
+        &__name{
+            color: #0d0d0d;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 700;
+        }
+        &__num{
+            color: #646464;
+            font-size: 14px;
+            line-height: 33px;
+            font-weight: 300;
+        }
+    }
+}
+
+@media(max-width:980px){
+    .reviews{
+        &-item{
+            justify-content: center;
+            &__icon{
+                margin-right: 30px;
+            }
+            &__text{
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .reviews{
+        &-item{
+            justify-content: center;
+            &__icon{
+                margin-right: 20px;
+            }
+            img {
+                height: 130px;
+                width: 130px;
+            }
+            &__text{
+                width: 400px;
+                font-size: 14px;
+                margin-right: 0;
+            }
+            .double-height{
+                display: block;
+                content: '';
+                height: 0px;
+            }
+            &__name{
+                font-size: 16px;
+                line-height: 23px;
+            }
+            &__num{
+                font-size: 13px;
+                line-height: 27px;
+            }
+        }
+    }
+}
+
+@media(max-width:575px){
+    .reviews{
+        &-item{
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 75px;
+            &__icon{
+                margin: 0;
+            }
+            &__text{
+                width: 300px;
+                text-align: center;
+            }
+        }  
+    }
+}
