@@ -21,6 +21,12 @@
             width: 70px;
             margin: 0 auto 38px auto;
         }
+        #heart{
+            animation: heartbeat 2s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
         span{
             display: block;
             font-size: 18px;
