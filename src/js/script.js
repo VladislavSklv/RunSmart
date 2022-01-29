@@ -93,7 +93,7 @@ $(document).ready(function(){
             $('form').trigger('reset');
         });
         return false;
-    });
+    }); 
 
     //Smooth scroll and pageUp
 
