@@ -60,7 +60,7 @@
 @media(max-width: 768px) {
     .modal{
         width: 300px;
-        min-height: 320px;
+        min-height: 110px;
         padding: 20px;
         &__close{
             font-size: 35px;
@@ -80,7 +80,7 @@
 @media(max-width: 450px){
     .modal{
         width: 260px;
-        min-height: 280px;
+        min-height: 100px;
         padding: 20px;
         &__close{
             font-size: 30px;
